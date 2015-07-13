@@ -1,0 +1,66 @@
+NAU Web Pro Meeting
+
+Presentation by NAU Security Team
+-Team is now growing from 1 to 4
+- Future plan is to develop more web applications
+	- Compliance
+	- Analytics
+	- Spelunking
+
+Web Application Security
+	- Presentation by Brian
+	- Nau.edu/its/security
+	- "Security Essentials" is mandatory training for everyone
+		○ Mandatory since last Fall
+			§ I believe for all NAU ITS staff
+		○ Not an annual training
+	- All phishing emails should be reported: "Report a Suspicious Email"
+		○ Send all reports through website above
+		○ Basically copy/paste header and body into web app
+		○ //From what it sounds like, it looks like phishing is a problem for NAU Employees, this has been a concern for NAU Security
+		○ Avoid using hyperlinks in emails (either placing them or using them)
+	- Provides some scanning services
+	- Resources on ssl/tls/ciphers
+	- Qualyst Enterprise - 
+		○ Scanning appliances
+		○ Provides services to scan IP/hosts
+		○ Access to this services is limited, usually have to go through NAU ITS Security to set this up
+			§ Limited to number of web projects that can be "saved" to the services; due to licensing 
+		○ This services usually finds open ports
+		○ Using scans for web applications is a bit more tricky, than servers
+			§ Can find X-side scripting
+			§ SQL injection vulnerability
+			
+• Trey Presenter: Selenium IDE (Automation)
+	- Front end testing tool, through the browser
+	- Mimic human input
+		○ Dragging/dropping
+	- Two version:
+		○ Web Driver (accessed via programming)
+			§ .net
+		○ Selenium IDE (Firefox plugin GUI, only)
+	- Reasons:
+		○ Automate repetitive tasks
+		○ Run test across many pages/sites
+		○ Check hundreds of fields, validations
+		○ Can be used by non-developers
+		○ Well documented
+		○ Can record human action
+	- How it works:
+		○ Simple script format
+		○ Uses an HTML table to define the actions
+			§ This HTML is editable
+		○ Provides more menu options when you right click in Firefox to apply specific methods (i.e.; verifyText)
+	- Demo
+	- Questions
+		○ I could be used to check for vulnerabilities as well. You could script it to insert a script attack and run the test.
+	- //Can be used to verify invalidation
+	- //Promotes Unit Testing
+	- //Good tool for BA's
+	- Tips:
+		○ Use clean , unique IDs and Class anames on HTML elements
+		○ Use CSS selectors vs Xpath whenever possible
+		○ Start with Firefox version before programmatic ones
+• Next meeting: 
+	- Building 90's big meeting room is taken over
+	- Next meeting might be in EC
