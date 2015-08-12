@@ -1,0 +1,30 @@
+GOAL 1: Improve Extended Campuses operational efficiency by developing high quality, robust software applications.
+7/2/2014-8/19/2014: Project Name: Landing Pages
+	Improved the FormattedBodyContent Ektron widget by implementing dynamic text editor, insertion of images/videos, and insertion of URL links. The development of improving this widget was very complex as cohesion between third party libraries and Ektron was needed in order to implement the mentioned features. The end result was a widget that would allow for non-programmers to type out documents, insert images, and create URL links in a single editable webpage with visuals that looks very close the printed content.
+11/18/2014-12/11/2014: Project Name: EC, Yuma, Yav, PL Widget Maintenance
+	Developed and implemented an Ektron widget and web control hybrid for use in EC, Yuma, Yavapai, and PL. EC development focus towards EC Site Management but continuing maintenance in Ektron sites called for a new widget/web control hybrid to be developed. This new type of hybrid could be implemented as both a droppable widget for ektron sites or called in a Visual Studio C# site; and be functional in the same manner for both environments. For this project an existing widget was already created; however, this widget needed to be imported and converted into the hybrid version.
+1/15/2015-5/6/2015: Project Name: State Regulatory Compliance
+	Using the MVC process, created the base structure for Compliance webpages. Also implemented many of the user interface controls. This project was one of the first to implement the MVC process in conjunction with TME pull system. The process enables for developers to divide up code development into specific segments and allows for specialized talents to be utilized. For this project, created the base structure for user interface elements to reside; in addition, created many of the user interface elements. 
+Reasons: 
+GOAL 2: Speed information delivery with integrated systems and a single database platform.
+8/28/2014-9/23/2014: Project Name: Landing Pages
+	Developed code to allow for the viewing, insertion, and deletion of an image through an Ektron widget to the EC databases. Each feature, viewing, insertion, and deletion required its own SQL code to be developed. The main interface for this project is Ektron, heavy attention had to be turned to user interactions; as such, the widget had to be responsive enough so that database calls were executed directly and quickly.
+9/30/2014-10/8/2014: Project Name: Admin Connect 
+	Modified SQL in the TC Load Manager Admin page to allow for the viewing of the list of Coordinators and specific associated 2NAU Campuses. The main interface for TC Load Manager is an AJAX supported website. Thus there is heavy use of database calls in a dynamic manner. The SQL developed not only had to return quality information but had to be integrated into this system and work seamlessly. 
+11/17/14-11/18/2014: Project Name: Site Management: Admin Blog Maintenance
+	Modified code and access to EC Blog pages to allow for automatic viewing of specific blog categories: New, Press, Ideas. By modifying the URL Aliasing for the EC site was able to allow for quick links to be used in marketing materials that direct viewers of the blog to specific categories. 
+Reasons:
+GOAL 3: Reduce cost and maintenance cycles by utilizing industry standard hardware and software components.
+11/18/2014-12/24/2014: Project Name: EC, Yuma, Yav, PL Widget Maintenance
+	Developed and Implemented an Ektron widget and web control hybrid for use in EC, Yuma, Yavapai, and PL.
+1/15/2015-5/27/2015: Project Name: State Regulatory Compliance
+	Utilizing the MVC process the team was able to develop and implement a new web page with full functionality to read and write to EC databases.
+Reasons: 
+GOAL 4: Continued ability staying productive in the use of current development software, languages and techniques used within the Extended Campuses Web and Database environments.
+7/9/2014-7/17/2014: Project Name: Landing Pages 
+	Researched multiple code development processes to implement insertion of images into an Ektron widget.
+10/8/2014-11/7/2014: Project Name: Admin Connect
+	While waiting for information confirmation, explored many different data retrieval options that could be used in displaying information to the TC Assignment user interface.
+3/26/2015-5/27/2015: Project Name: State Regulatory Compliance
+	The project did not have a final design documentation. Took the initiative to implement stylizations and end users experience.
+Reasons:
