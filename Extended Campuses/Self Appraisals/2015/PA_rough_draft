@@ -16,15 +16,15 @@ GOAL 2: Speed information delivery with integrated systems and a single database
 Reasons:
 GOAL 3: Reduce cost and maintenance cycles by utilizing industry standard hardware and software components.
 11/18/2014-12/24/2014: Project Name: EC, Yuma, Yav, PL Widget Maintenance
-	Developed and Implemented an Ektron widget and web control hybrid for use in EC, Yuma, Yavapai, and PL.
+	Developed and Implemented an Ektron widget and web control hybrid for use in EC, Yuma, Yavapai, and PL. The hybrid control was developed to be a bridge between Ektron sites and EC Site Management sites. As a hybrid control, it can be dropped in an Ektron site or implemented into Visual Studio C# code; while maintaining the same functionality between the two sites. EC saves time not having to maintain two separate controls that have the same functionality.
 1/15/2015-5/27/2015: Project Name: State Regulatory Compliance
-	Utilizing the MVC process the team was able to develop and implement a new web page with full functionality to read and write to EC databases.
+	Utilizing the MVC process the team was able to develop and implement a new web page with full functionality to read and write to EC databases. This project was one of the first to implement the MVC process for a project. The MVC process allows for the separation of code segments and utilizes developer talents and specilization. In utilizing the MVC process the team was able to develop a new web page with database supported information retrieval and posting.
 Reasons: 
 GOAL 4: Continued ability staying productive in the use of current development software, languages and techniques used within the Extended Campuses Web and Database environments.
 7/9/2014-7/17/2014: Project Name: Landing Pages 
-	Researched multiple code development processes to implement insertion of images into an Ektron widget.
+	Researched multiple code development processes to implement insertion of images into an Ektron widget. The goal set forth was to be able to allow users to insert images into a webpage. There are multiple paths for the code to be developed in order to accomplish this goal. Research image insertion via strict HTML, Ektron supported libraries, JQuery libraries, AJAX libraries, and more. In the end I was able to choose the best option for EC.
 10/8/2014-11/7/2014: Project Name: Admin Connect
-	While waiting for information confirmation, explored many different data retrieval options that could be used in displaying information to the TC Assignment user interface.
+	While waiting for information confirmation, explored many different data retrieval options that could be used in displaying information to the TC Assignment user interface. After initializing communications between the front end of TC Load Manager and EC databases
 3/26/2015-5/27/2015: Project Name: State Regulatory Compliance
 	The project did not have a final design documentation. Took the initiative to implement stylizations and end users experience.
 Reasons:
