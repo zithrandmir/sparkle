@@ -8,30 +8,29 @@ Skills:
 Special Abilities:
 	Practice with All Weapons 
 	Shield Master
-	Practice in Armor
+	+Practice in All Armor (No speed penalty for wearing plate)
 
-Tier: 1
+Tier: 2
 +Effort: 2
 
 Cyphers (Limit 2):
-	Snow Lens (lvl 3) 
-		+1 Vision to Light
-		28 hours
 	Grow taller
 	Grow a body part
 
 Shins: 95
 XP: 3
 
-+Might: 8/14 - Edge 2
-+Speed: 6/12 - Edge 1
-Intellect: 3/12 
++Might: 16/16 - Edge 2
++Speed: 14/14 - Edge 1
+Intellect: 12/12 
 
 Recovery Rolls: 1
 
 Attacks:
-	Bash (1 Might point cost)
+	Light Bash (1 Might point cost) - +1 to hit (2D Damage) [Teir 2]
+	Bash (1 Might point cost) - 
 	Thrust (1 Might point cost)
+	Successive Attack (2 Speed points) - after taking down a foe, immediately make another attack on new foe within reach; in the same turn. [Tier 2]
 
 Possessions:
 	Equipment:
@@ -372,3 +371,5 @@ Story:
 	After some quick talking, we all get on a level footing about our intentsions (possibly).
 
 	Tatsu and Zib began barggining with Herman to get information and passage through the area. In the mean time, Moran started to investigate the other rooms. Zib attmpt to bargin a broken force module, using hedge magic to waft perfume of lavender towards him. Herman, being a man of the woods and field, he is not impressed by Zib's attempt at deception.
+
+	
