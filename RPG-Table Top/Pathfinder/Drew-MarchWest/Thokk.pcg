@@ -59,7 +59,7 @@ ALIGN:NG
 RACE:Half-Orc
 
 # Character Class(es)
-CLASS:Shaman|LEVEL:1|SKILLPOOL:0
+CLASS:Shaman|LEVEL:1|SKILLPOOL:1
 CLASSABILITIESLEVEL:Shaman=1|HITPOINTS:8|SKILLSGAINED:5|SKILLSREMAINING:0
 
 # Character Experience
@@ -107,33 +107,34 @@ SKILL:Intimidate|OUTPUTORDER:26|
 SKILL:Intimidate (Perform (Comedy))|OUTPUTORDER:27|
 SKILL:Intimidate (Perform (Keyboard Instruments))|OUTPUTORDER:28|
 SKILL:Intimidate (Perform (Percussion Instruments))|OUTPUTORDER:29|
-SKILL:Knowledge (Untrained)|OUTPUTORDER:30|
-SKILL:Perception|OUTPUTORDER:32|
-SKILL:Perform (Untrained)|OUTPUTORDER:33|
-SKILL:Profession (Untrained)|OUTPUTORDER:34|
-SKILL:Ride|OUTPUTORDER:35|
-SKILL:Samurai Mount|OUTPUTORDER:36|
-SKILL:Sense Motive|OUTPUTORDER:37|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:N]
-SKILL:Sense Motive (Perform (Oratory))|OUTPUTORDER:38|
-SKILL:Sense Motive (Perform (Sing))|OUTPUTORDER:39|
-SKILL:Spellcraft|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:Y]
-SKILL:Stealth|OUTPUTORDER:42|
-SKILL:Survival|OUTPUTORDER:43|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:Y]
-SKILL:Swim|OUTPUTORDER:44|
-SKILL:Untrained Charisma|OUTPUTORDER:45|
-SKILL:Untrained Dexterity|OUTPUTORDER:46|
-SKILL:Untrained Intelligence|OUTPUTORDER:47|
-SKILL:Untrained Strength|OUTPUTORDER:48|
-SKILL:Untrained Wisdom|OUTPUTORDER:49|
+SKILL:Knowledge (Nature)|OUTPUTORDER:30|
+SKILL:Knowledge (Untrained)|OUTPUTORDER:31|
+SKILL:Perception|OUTPUTORDER:33|
+SKILL:Perform (Untrained)|OUTPUTORDER:34|
+SKILL:Profession (Untrained)|OUTPUTORDER:35|
+SKILL:Ride|OUTPUTORDER:36|
+SKILL:Samurai Mount|OUTPUTORDER:37|
+SKILL:Sense Motive|OUTPUTORDER:38|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:N]
+SKILL:Sense Motive (Perform (Oratory))|OUTPUTORDER:39|
+SKILL:Sense Motive (Perform (Sing))|OUTPUTORDER:40|
+SKILL:Spellcraft|OUTPUTORDER:43|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Stealth|OUTPUTORDER:44|
+SKILL:Survival|OUTPUTORDER:45|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Swim|OUTPUTORDER:46|
+SKILL:Untrained Charisma|OUTPUTORDER:47|
+SKILL:Untrained Dexterity|OUTPUTORDER:48|
+SKILL:Untrained Intelligence|OUTPUTORDER:49|
+SKILL:Untrained Strength|OUTPUTORDER:50|
+SKILL:Untrained Wisdom|OUTPUTORDER:51|
 SKILL:Untrained ~ Disable Device|OUTPUTORDER:16|
 SKILL:Untrained ~ Handle Animal|OUTPUTORDER:22|
-SKILL:Untrained ~ Linguistics|OUTPUTORDER:31|
-SKILL:Untrained ~ Sleight of Hand|OUTPUTORDER:40|
-SKILL:Untrained ~ Spellcraft|OUTPUTORDER:41|
-SKILL:Untrained ~ Use Magic Device|OUTPUTORDER:50|
+SKILL:Untrained ~ Linguistics|OUTPUTORDER:32|
+SKILL:Untrained ~ Sleight of Hand|OUTPUTORDER:41|
+SKILL:Untrained ~ Spellcraft|OUTPUTORDER:42|
+SKILL:Untrained ~ Use Magic Device|OUTPUTORDER:52|
 
 # Character Languages
-LANGUAGE:Common|LANGUAGE:Draconic|LANGUAGE:Orc
+LANGUAGE:Common|LANGUAGE:Orc
 
 # Character Feats
 FEATPOOL:0.0
@@ -164,7 +165,9 @@ WEAPONPROF:[WEAPON:Mace (Light)|WEAPON:Mere Club|WEAPON:Morningstar|WEAPON:Quart
 WEAPONPROF:[WEAPON:Spells (Ray)|WEAPON:Spells (Touch)|WEAPON:Splash Weapon|WEAPON:Stake|WEAPON:Unarmed Strike|WEAPON:Underwater Crossbow (Heavy)|WEAPON:Underwater Crossbow (Light)]
 
 # Character Equipment
-MONEY:0
+MONEY:35.00
+EQUIPNAME:Greataxe|OUTPUTORDER:0|COST:20.0|WT:12.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Greataxe (Base)|DATA:NAME=Greataxe$EQMOD=Material ~ Steel]
+EQUIPNAME:Scale Mail|OUTPUTORDER:0|COST:50.0|WT:30.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Scale Mail (Base)|DATA:NAME=Scale Mail$EQMOD=Material ~ Steel]
 EQUIPSET:Default Set|ID:0.1|USETEMPMODS:Y
 CALCEQUIPSET:0.1
 
@@ -189,7 +192,7 @@ CHARACTERDMNOTES:
 # Kits
 
 # Character Master/Follower
-FOLLOWER:Ren|TYPE:Familiar|RACE:FAMILIAR (RAVEN)|HITDICE:0|FILE:Ren.pcg
+FOLLOWER:Ren|TYPE:Familiar|RACE:FAMILIAR (RAVEN)|HITDICE:0|FILE:..\..\..\..\..\Documents\pcgen\characters\Ren.pcg
 
 # Character Notes Tab
 
