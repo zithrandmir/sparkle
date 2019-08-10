@@ -146,7 +146,8 @@ FEATPOOL:0.0
 # Character Abilities
 ABILITY:Ability Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:+2 Wisdom|TYPE:AbilityBonus
 USERPOOL:Ability Bonus|POOLPOINTS:0.0
-ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Magical Aptitude|TYPE:General.DragonShamanBonus|DESC:You are skilled at spellcasting and using magic items.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Channel Smite|TYPE:Combat.UndeadLordBonus|DESC:You can channel your divine energy through your weapon.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Guided Hand|TYPE:General|DESC:Your deity blesses any strike you make with that deity's favored weapon.
 USERPOOL:FEAT|POOLPOINTS:0.0
 ABILITY:Familiar Alertness Choice|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Familiar Alertness Choice ~ Alertness active|TYPE:FamiliarAlertnessChoice.SpecialQuality.Extraordinary|DESC:PC has a familiar that has the Alertness (Ex) ability and it is within arms' reach, the master gains the Alertness feat.
 USERPOOL:Familiar Alertness Choice|POOLPOINTS:0.0
@@ -156,6 +157,8 @@ ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Cla
 ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Skill Rank|APPLIEDTO:Knowledge (Nature)|TYPE:FavoredClassBonus
 ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Half-orc ~ Favored Class Bonus ~ Clerical Spell|APPLIEDTO:|TYPE:SpecialQuality.FavoredClassBonus.FavoredClassShaman|DESC:Add one spell from the cleric spell list that isn't on the shaman spell list to the list of spells the shaman knows. This spell must be at least 1 level below the highest spell level the shaman can cast.
 USERPOOL:Favored Class Bonus|POOLPOINTS:0.0
+ABILITY:Guided Hand Selection|TYPE:NORMAL|CATEGORY:Internal|KEY:Guided Hand ~ Melee|APPLIEDTO:Greataxe|TYPE:Guided Hand
+USERPOOL:Guided Hand Selection|POOLPOINTS:0.0
 ABILITY:Half-Orc Racial Subtype|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Half-Orc Racial Subtype ~ Mystic|TYPE:Half-Orc Racial Subtype.SpecialQuality|DESC:Orc shamans are brutal teachers who sometimes kill or maim their most promising students in order to eliminate what could be a potential rival. Half-orcs who survive years of abuse by an orc shaman master are deeply scarred and altered by the experience. Shaman trainees learn early that cunning and luck are often the only things that offer a chance of survival. They have the shaman's apprentice and sacred tattoo alternate racial traits.
 USERPOOL:Half-Orc Racial Subtype|POOLPOINTS:0.0
 ABILITY:Shaman Hex|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Shaman Hex ~ Fortune|TYPE:ShamanHex.SpecialQuality.Supernatural|DESC:The shaman grants a creature within 30 feet a bit of good luck for %1 rounds. The target can call upon this good luck once per round, allowing it to reroll any ability check, attack roll, saving throw, or skill check, taking the better result. The target creature must to decide to use this ability before the first roll is made. Once a creature has benefited from the fortune hex, it cannot benefit from it again for 24 hours.&pipe;ShamanFortuneHexDuration
