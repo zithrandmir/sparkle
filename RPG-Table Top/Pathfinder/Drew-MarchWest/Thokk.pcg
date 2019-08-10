@@ -76,7 +76,7 @@ TEMPLATESAPPLIED:[NAME:Race Bonus Language ~ Draconic]
 TEMPLATESAPPLIED:[NAME:Race Bonus Language ~ Giant]
 TEMPLATESAPPLIED:[NAME:Race Bonus Language ~ Gnoll]
 TEMPLATESAPPLIED:[NAME:Race Bonus Language ~ Goblin]
-TEMPLATESAPPLIED:[NAME:Mystic]
+TEMPLATESAPPLIED:[NAME:Feral]
 
 # Character Region
 REGION:None
@@ -159,7 +159,7 @@ ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Half-orc ~ 
 USERPOOL:Favored Class Bonus|POOLPOINTS:0.0
 ABILITY:Guided Hand Selection|TYPE:NORMAL|CATEGORY:Internal|KEY:Guided Hand ~ Melee|APPLIEDTO:Greataxe|TYPE:Guided Hand
 USERPOOL:Guided Hand Selection|POOLPOINTS:0.0
-ABILITY:Half-Orc Racial Subtype|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Half-Orc Racial Subtype ~ Mystic|TYPE:Half-Orc Racial Subtype.SpecialQuality|DESC:Orc shamans are brutal teachers who sometimes kill or maim their most promising students in order to eliminate what could be a potential rival. Half-orcs who survive years of abuse by an orc shaman master are deeply scarred and altered by the experience. Shaman trainees learn early that cunning and luck are often the only things that offer a chance of survival. They have the shaman's apprentice and sacred tattoo alternate racial traits.
+ABILITY:Half-Orc Racial Subtype|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Half-Orc Racial Subtype ~ Feral|TYPE:Half-Orc Racial Subtype.SpecialQuality|DESC:Half-orc children who are abandoned as infants or small children rarely survive in the wild, but a few manage to scrape out a meager existence as "wild children," tough enough to live but completely uncivilized. Feral half-orcs have the forest walker and toothy alternate racial traits.
 USERPOOL:Half-Orc Racial Subtype|POOLPOINTS:0.0
 ABILITY:Shaman Hex|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Shaman Hex ~ Fortune|TYPE:ShamanHex.SpecialQuality.Supernatural|DESC:The shaman grants a creature within 30 feet a bit of good luck for %1 rounds. The target can call upon this good luck once per round, allowing it to reroll any ability check, attack roll, saving throw, or skill check, taking the better result. The target creature must to decide to use this ability before the first roll is made. Once a creature has benefited from the fortune hex, it cannot benefit from it again for 24 hours.&pipe;ShamanFortuneHexDuration
 USERPOOL:Shaman Hex|POOLPOINTS:0.0
@@ -170,13 +170,14 @@ ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Spirit Sense|TYP
 USERPOOL:Traits|POOLPOINTS:0.0
 
 # Character Weapon proficiencies
-WEAPONPROF:[WEAPON:Battle Aspergillum|WEAPON:Bayonet|WEAPON:Blowgun|WEAPON:Boar Spear|WEAPON:Brass Knuckles|WEAPON:Cestus|WEAPON:Club|WEAPON:Crossbow (Heavy)|WEAPON:Crossbow (Light)|WEAPON:Dagger]
-WEAPONPROF:[WEAPON:Dagger (Punching)|WEAPON:Dart|WEAPON:Falchion|WEAPON:Gauntlet|WEAPON:Gauntlet (Spiked)|WEAPON:Grapple|WEAPON:Greataxe|WEAPON:Javelin|WEAPON:Longspear|WEAPON:Mace (Heavy)]
-WEAPONPROF:[WEAPON:Mace (Light)|WEAPON:Mere Club|WEAPON:Morningstar|WEAPON:Quarterstaff|WEAPON:Rock|WEAPON:Shortspear|WEAPON:Sickle|WEAPON:Sling|WEAPON:Spear|WEAPON:Spear (Boar)]
-WEAPONPROF:[WEAPON:Spells (Ray)|WEAPON:Spells (Touch)|WEAPON:Splash Weapon|WEAPON:Stake|WEAPON:Unarmed Strike|WEAPON:Underwater Crossbow (Heavy)|WEAPON:Underwater Crossbow (Light)]
+WEAPONPROF:[WEAPON:Battle Aspergillum|WEAPON:Bayonet|WEAPON:Bite|WEAPON:Blowgun|WEAPON:Boar Spear|WEAPON:Brass Knuckles|WEAPON:Cestus|WEAPON:Club|WEAPON:Crossbow (Heavy)|WEAPON:Crossbow (Light)]
+WEAPONPROF:[WEAPON:Dagger|WEAPON:Dagger (Punching)|WEAPON:Dart|WEAPON:Falchion|WEAPON:Gauntlet|WEAPON:Gauntlet (Spiked)|WEAPON:Grapple|WEAPON:Greataxe|WEAPON:Javelin|WEAPON:Longspear]
+WEAPONPROF:[WEAPON:Mace (Heavy)|WEAPON:Mace (Light)|WEAPON:Mere Club|WEAPON:Morningstar|WEAPON:Quarterstaff|WEAPON:Rock|WEAPON:Shortspear|WEAPON:Sickle|WEAPON:Sling|WEAPON:Spear]
+WEAPONPROF:[WEAPON:Spear (Boar)|WEAPON:Spells (Ray)|WEAPON:Spells (Touch)|WEAPON:Splash Weapon|WEAPON:Stake|WEAPON:Unarmed Strike|WEAPON:Underwater Crossbow (Heavy)|WEAPON:Underwater Crossbow (Light)]
 
 # Character Equipment
 MONEY:997631.00
+EQUIPNAME:Bite (Natural/Primary)|OUTPUTORDER:3|COST:0|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Bite|DATA:KEY=Bite]
 EQUIPNAME:Greataxe|OUTPUTORDER:1|COST:20.0|WT:12.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Greataxe (Base)|DATA:NAME=Greataxe$EQMOD=Material ~ Steel]
 EQUIPNAME:Javelin|OUTPUTORDER:4|COST:1|WT:2.0|QUANTITY:4.0|NOTE:|CUSTOMIZATION:[BASEITEM:Javelin (Base)|DATA:KEY=Javelin (Base)]
 EQUIPNAME:Masterwork Chain Shirt|OUTPUTORDER:3|COST:250.0|WT:25.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Chain Shirt (Base)|DATA:NAME=Masterwork Chain Shirt$KEY=Masterwork Chain Shirt (Base)$EQMOD=Material ~ Steel.Special Quality ~ Masterwork ~ Armor]
@@ -187,6 +188,7 @@ EQUIPSET:Armor|ID:0.1.01|VALUE:Masterwork Chain Shirt|QUANTITY:1.0|USETEMPMODS:Y
 EQUIPSET:Both Hands|ID:0.1.02|VALUE:Greataxe|QUANTITY:1.0|USETEMPMODS:Y
 EQUIPSET:Ring|ID:0.1.03|VALUE:Ring of Protection +1|QUANTITY:1.0|USETEMPMODS:Y
 EQUIPSET:Carried|ID:0.1.04|VALUE:Javelin|QUANTITY:4.0|USETEMPMODS:Y
+EQUIPSET:Natural-Primary|ID:0.1.5|VALUE:Bite (Natural/Primary)|QUANTITY:1.0|USETEMPMODS:Y
 CALCEQUIPSET:0.1
 
 # Temporary Bonuses
