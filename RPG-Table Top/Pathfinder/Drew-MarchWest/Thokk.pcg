@@ -55,15 +55,17 @@ STAT:CON|SCORE:12
 STAT:INT|SCORE:11
 STAT:WIS|SCORE:14
 STAT:CHA|SCORE:10
-ALIGN:NG
+ALIGN:CN
 RACE:Half-Orc
 
 # Character Class(es)
-CLASS:Shaman|LEVEL:1|SKILLPOOL:1
+CLASS:Shaman|LEVEL:3|SKILLPOOL:0
 CLASSABILITIESLEVEL:Shaman=1|HITPOINTS:8|SKILLSGAINED:5|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Shaman=2|HITPOINTS:8|SKILLSGAINED:5|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Shaman=3|HITPOINTS:5|SKILLSGAINED:5|SKILLSREMAINING:0
 
 # Character Experience
-EXPERIENCE:0
+EXPERIENCE:5000
 EXPERIENCETABLE:Medium
 
 # Character Templates
@@ -80,15 +82,15 @@ TEMPLATESAPPLIED:[NAME:Mystic]
 REGION:None
 
 # Character Skills
-SKILL:Acrobatics|OUTPUTORDER:1|
+SKILL:Acrobatics|OUTPUTORDER:1|CLASSBOUGHT:[CLASS:Shaman|RANKS:2.0|COST:1|CLASSSKILL:N]
 SKILL:Acrobatics (Perform (Dance))|OUTPUTORDER:2|
-SKILL:Appraise|OUTPUTORDER:3|
+SKILL:Appraise|OUTPUTORDER:3|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:N]
 SKILL:Bluff|OUTPUTORDER:4|
 SKILL:Bluff (Perform (Act))|OUTPUTORDER:5|
 SKILL:Bluff (Perform (Comedy))|OUTPUTORDER:6|
 SKILL:Bluff (Perform (Sing))|OUTPUTORDER:7|
 SKILL:Bluff (Perform (String Instruments))|OUTPUTORDER:8|
-SKILL:Climb|OUTPUTORDER:9|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:N]
+SKILL:Climb|OUTPUTORDER:9|CLASSBOUGHT:[CLASS:Shaman|RANKS:2.0|COST:1|CLASSSKILL:N]
 SKILL:Craft (Untrained)|OUTPUTORDER:10|
 SKILL:Diplomacy|OUTPUTORDER:11|
 SKILL:Diplomacy (Perform (Keyboard Instruments))|OUTPUTORDER:12|
@@ -97,9 +99,10 @@ SKILL:Diplomacy (Perform (String Instruments))|OUTPUTORDER:14|
 SKILL:Diplomacy (Perform (Wind Instruments))|OUTPUTORDER:15|
 SKILL:Disguise|OUTPUTORDER:17|
 SKILL:Disguise (Perform (Act))|OUTPUTORDER:18|
-SKILL:Escape Artist|OUTPUTORDER:19|
+SKILL:Escape Artist|OUTPUTORDER:19|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:N]
 SKILL:Fly|OUTPUTORDER:20|
 SKILL:Fly (Perform (Dance))|OUTPUTORDER:21|
+SKILL:Handle Animal|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:Y]
 SKILL:Handle Animal (Perform (Percussion Instruments))|OUTPUTORDER:23|
 SKILL:Handle Animal (Perform (Wind Instruments))|OUTPUTORDER:24|
 SKILL:Heal|OUTPUTORDER:25|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:Y]
@@ -118,7 +121,7 @@ SKILL:Sense Motive|OUTPUTORDER:38|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLA
 SKILL:Sense Motive (Perform (Oratory))|OUTPUTORDER:39|
 SKILL:Sense Motive (Perform (Sing))|OUTPUTORDER:40|
 SKILL:Spellcraft|OUTPUTORDER:43|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:Y]
-SKILL:Stealth|OUTPUTORDER:44|
+SKILL:Stealth|OUTPUTORDER:44|CLASSBOUGHT:[CLASS:Shaman|RANKS:3.0|COST:1|CLASSSKILL:N]
 SKILL:Survival|OUTPUTORDER:45|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:Y]
 SKILL:Swim|OUTPUTORDER:46|
 SKILL:Untrained Charisma|OUTPUTORDER:47|
@@ -131,10 +134,11 @@ SKILL:Untrained ~ Handle Animal|OUTPUTORDER:22|
 SKILL:Untrained ~ Linguistics|OUTPUTORDER:32|
 SKILL:Untrained ~ Sleight of Hand|OUTPUTORDER:41|
 SKILL:Untrained ~ Spellcraft|OUTPUTORDER:42|
-SKILL:Untrained ~ Use Magic Device|OUTPUTORDER:52|
+SKILL:Untrained ~ Use Magic Device|OUTPUTORDER:53|
+SKILL:Use Magic Device|OUTPUTORDER:52|CLASSBOUGHT:[CLASS:Shaman|RANKS:1.0|COST:1|CLASSSKILL:N]
 
 # Character Languages
-LANGUAGE:Common|LANGUAGE:Orc
+LANGUAGE:Common|LANGUAGE:Draconic|LANGUAGE:Orc
 
 # Character Feats
 FEATPOOL:0.0
@@ -148,10 +152,14 @@ ABILITY:Familiar Alertness Choice|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Famil
 USERPOOL:Familiar Alertness Choice|POOLPOINTS:0.0
 ABILITY:Favored Class|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Shaman|TYPE:FavoredClass
 USERPOOL:Favored Class|POOLPOINTS:0.0
+ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Hit Point|APPLIEDTO:|TYPE:FavoredClassBonus
 ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Skill Rank|APPLIEDTO:Knowledge (Nature)|TYPE:FavoredClassBonus
+ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Half-orc ~ Favored Class Bonus ~ Clerical Spell|APPLIEDTO:|TYPE:SpecialQuality.FavoredClassBonus.FavoredClassShaman|DESC:Add one spell from the cleric spell list that isn't on the shaman spell list to the list of spells the shaman knows. This spell must be at least 1 level below the highest spell level the shaman can cast.
 USERPOOL:Favored Class Bonus|POOLPOINTS:0.0
 ABILITY:Half-Orc Racial Subtype|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Half-Orc Racial Subtype ~ Mystic|TYPE:Half-Orc Racial Subtype.SpecialQuality|DESC:Orc shamans are brutal teachers who sometimes kill or maim their most promising students in order to eliminate what could be a potential rival. Half-orcs who survive years of abuse by an orc shaman master are deeply scarred and altered by the experience. Shaman trainees learn early that cunning and luck are often the only things that offer a chance of survival. They have the shaman's apprentice and sacred tattoo alternate racial traits.
 USERPOOL:Half-Orc Racial Subtype|POOLPOINTS:0.0
+ABILITY:Shaman Hex|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Shaman Hex ~ Fortune|TYPE:ShamanHex.SpecialQuality.Supernatural|DESC:The shaman grants a creature within 30 feet a bit of good luck for %1 rounds. The target can call upon this good luck once per round, allowing it to reroll any ability check, attack roll, saving throw, or skill check, taking the better result. The target creature must to decide to use this ability before the first roll is made. Once a creature has benefited from the fortune hex, it cannot benefit from it again for 24 hours.&pipe;ShamanFortuneHexDuration
+USERPOOL:Shaman Hex|POOLPOINTS:0.0
 ABILITY:Shaman Spirit|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Shaman Spirit ~ Life|TYPE:ShamanSpirit.SpecialQuality|DESC:Spirit Magic Spells&colon; detect undead (1st), lesser restoration (2nd), neutralize poison (3rd), restoration (4th), breath of life (5th), heal (6th), greater restoration (7th), mass heal (8th), true resurrection (9th)
 USERPOOL:Shaman Spirit|POOLPOINTS:0.0
 ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Battlefield Disciple|TYPE:Trait.BasicTrait.CombatTrait|DESC:You are skilled at supporting your allies in the heat of battle. You gain a +2 trait bonus on Heal checks made to stabilize a dying creature. In addition, when you successfully use the aid another action in combat to grant an ally a bonus on her next attack roll, the bonus you grant increases by 1.
@@ -165,8 +173,10 @@ WEAPONPROF:[WEAPON:Mace (Light)|WEAPON:Mere Club|WEAPON:Morningstar|WEAPON:Quart
 WEAPONPROF:[WEAPON:Spells (Ray)|WEAPON:Spells (Touch)|WEAPON:Splash Weapon|WEAPON:Stake|WEAPON:Unarmed Strike|WEAPON:Underwater Crossbow (Heavy)|WEAPON:Underwater Crossbow (Light)]
 
 # Character Equipment
-MONEY:35.00
+MONEY:999631.00
 EQUIPNAME:Greataxe|OUTPUTORDER:0|COST:20.0|WT:12.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Greataxe (Base)|DATA:NAME=Greataxe$EQMOD=Material ~ Steel]
+EQUIPNAME:Javelin|OUTPUTORDER:0|COST:1|WT:2.0|QUANTITY:4.0|NOTE:|CUSTOMIZATION:[BASEITEM:Javelin (Base)|DATA:KEY=Javelin (Base)]
+EQUIPNAME:Masterwork Chain Shirt|OUTPUTORDER:0|COST:250.0|WT:25.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Chain Shirt (Base)|DATA:NAME=Masterwork Chain Shirt$KEY=Masterwork Chain Shirt (Base)$EQMOD=Material ~ Steel.Special Quality ~ Masterwork ~ Armor]
 EQUIPNAME:Scale Mail|OUTPUTORDER:0|COST:50.0|WT:30.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Scale Mail (Base)|DATA:NAME=Scale Mail$EQMOD=Material ~ Steel]
 EQUIPSET:Default Set|ID:0.1|USETEMPMODS:Y
 CALCEQUIPSET:0.1
@@ -176,8 +186,8 @@ CALCEQUIPSET:0.1
 # EquipSet Temp Bonuses
 
 # Character Deity/Domain
-DEITY:Gozreh|DEITYDOMAINS:[DOMAIN:Air|DOMAIN:Animal|DOMAIN:Plant|DOMAIN:Water|DOMAIN:Weather|DOMAIN:Cloud Subdomain|DOMAIN:Decay Subdomain|DOMAIN:Growth Subdomain|DOMAIN:Oceans Subdomain|DOMAIN:Seasons Subdomain|DOMAIN:Wind Subdomain]|ALIGNALLOW:|DESC:God of nature, weather, the sea|DEITYFAVWEAP:[WEAPON:Trident]|DEITYALIGN:TN
-DOMAIN:Life (Spirit)|SOURCE:[TYPE:PCClass|NAME:Shaman|LEVEL:1]
+DEITY:Rovagug|DEITYDOMAINS:[DOMAIN:Chaos|DOMAIN:Destruction|DOMAIN:Evil|DOMAIN:War|DOMAIN:Weather|DOMAIN:Blood Subdomain|DOMAIN:Catastrophe Subdomain|DOMAIN:Demon Subdomain (Chaos)|DOMAIN:Demon Subdomain (Evil)|DOMAIN:Protean Subdomain|DOMAIN:Rage Subdomain|DOMAIN:Storms Subdomain]|ALIGNALLOW:|DESC:God of wrath, disaster, destruction|DEITYFAVWEAP:[WEAPON:Greataxe]|DEITYALIGN:CE
+DOMAIN:Life (Spirit)|SOURCE:[TYPE:PCClass|NAME:Shaman|LEVEL:3]
 
 # Character Spells Information
 
