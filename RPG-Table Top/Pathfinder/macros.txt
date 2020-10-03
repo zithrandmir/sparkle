@@ -1,0 +1,144 @@
+&{template:default}
+{{name=Knockout vs CMD}}
+{{Attack:=[[ 1d20 + ?{CMB Type
+|Trip 1 (+13),13[Trip 1]
+|Trip 2 (+8),8[Trip 2]
+|Any Other CMB 1 (+10),10[Any CMB 1]
+|Any Other CMB 2 (+5),5[Any CMB 2]} + ?{Misc Bonus/Penalty?|0}[Misc] ]] vs CMD}}
+{{Check:=Fortitude [[17]] save}}
+{{Fail:=Unconscious for [[1d6]] rounds}}
+{{Save:=*Each round, as full-round action, Fortitude [[17]] check*}}
+
+&{template:default}
+{{name=Knockout vs AC}}
+{{Attack:=[[ 1d20 + ?{Attack Type
+|Attack 1 (+10),10[Attack 1]
+|Attack 2 (+5),5[Attack 2]} + ?{Misc Bonus/Penalty?|0}[Misc] ]] vs AC}}
+{{Check:=Fortitude [[17]] save}}
+{{Fail:=Unconscious for [[1d6]] rounds}}
+{{Save:=*Each round, as full-round action, Fortitude [[17]] check*}}
+
+
+&{template:default}
+{{name=Unarmed Attack (full-round)}}
+{{Bonus/Penalty:=?{Misc Bonus/Penalty?|0}[Misc]}}
+{{First Attack:=[[ 1d20 + 10[BAB1] + ?{Misc Bonus/Penalty?}[Misc] ]] vs AC}}
+{{Second Attack:=[[ 1d20 + 5[BAB2] + ?{Misc Bonus/Penalty?}[Misc] ]] vs AC}}
+{{Damage 1:=[[1d8 + 4]] damage}}
+{{Damage 2:=[[1d8 + 4]] damage}}
+{{Jab 1:=Add [[1d6]] damage}}
+
+
+&{template:default}
+{{name=Brawlers Flurry (full-round)}}
+{{Bonus/Penalty:=?{Misc Bonus/Penalty?|0}[Misc]}}
+{{First Attack:=[[ 1d20 + 10[BAB1] - 2[Penalty] + ?{Misc Bonus/Penalty?}[Misc] ]] vs AC}}
+{{Second Attack:=[[ 1d20 + 10[BAB1] - 2[Penalty] + ?{Misc Bonus/Penalty?}[Misc] ]] vs AC}}
+{{Third Attack:=[[ 1d20 + 5[BAB2] - 2[Penalty] + ?{Misc Bonus/Penalty?}[Misc] ]] vs AC}}
+{{Damage 1:=[[1d8 + 4]] damage}}
+{{Damage 2:=[[1d8 + 4]] damage}}
+{{Jab 1:=Add [[1d6]] damage}}
+{{Damage 3:=[[1d8 + 4]] damage}}
+{{Jab 2:=Add [[1d6]] damage}}
+
+
+&{template:default}
+{{name=Power Attack (Spear)}}
+{{Bonus/Penalty:=?{Misc Bonus/Penalty?|0}[Misc]}}
+{{Attack:=[[ 1d20 +10[BAB1] -2[Penalty] + ?{Misc Bonus/Penalty?}[Misc] ]] vs AC}}
+{{Damage:=[[ 1d8 + 6[Spear] + 4[Feat] + 6[STR Mod] ]] damage}}
+
+&{template:default}
+{{name=Power Attack (Morningstar)}}
+{{Bonus/Penalty:=?{Misc Bonus/Penalty?|0}[Misc]}}
+{{Attack:=[[ 1d20 +10[BAB1] -2[Penalty] + ?{Misc Bonus/Penalty?}[Misc] ]] vs AC}}
+{{Damage:=[[ 1d8 + 6[Morningstar] + 4[Feat] + 6[STR Mod] ]] damage}}
+
+
+&{template:default}
+{{name=Darragh Marching}}
+{{ Perception:=#Perception }}
+{{ Survival:=#Survival }}
+{{ Stealth:=#Stealth }}
+
+
+/me aims his Light Crossbow
+/roll 1d20cs>19 + ?{Range|
+80ft (+9), 9 | 
+160ft (+7), 7 | 
+240ft (+5), 5 | 
+320ft (+3), 3 | 
+400ft (+1), +1 | 
+480ft (-1), -1 | 
+560ft (-3), -3 | 
+640ft (-5), -5 | 
+720ft (-7), -7 | 
+800ft (-9), -9
+}[Range Bonus] + ?{Misc Bonus/Penalty?|0}[Misc. Bonus] for [[1d8]] damage
+
+/me fires the again
+/roll 1d20cs>19 + ?{Range|
+80ft (+4), 4 | 
+160ft (+2), 2 | 
+240ft (+0), 0 | 
+320ft (-2), -2 | 
+400ft (-4), -4 | 
+480ft (-6), -6 | 
+560ft (-8), -8 | 
+640ft (-10), -10 | 
+720ft (-12), -12 | 
+800ft (-14), -14
+}[Range Bonus] + ?{Misc Bonus/Penalty?|0}[Misc. Bonus] for [[1d8]] damage
+
+
+&{template:default}
+{{name=Darragh Save Check}}
+{{Bonus/Penalty:=?{Misc Bonus/Penalty?|0}[Misc]}}
+{{?{Save Type
+|Fortitude, Fortitude:=[[1d20 + 8[Fort] + ?{Misc Bonus/Penalty?&#125;[Misc]]]
+|Reflex, Reflex:=[[1d20 + 9[Ref] + ?{Misc Bonus/Penalty?&#125;[Misc]]]
+|Will, Will:=[[1d20 + 4[Will] + ?{Misc Bonus/Penalty?&#125;[Misc]]]}}}
+
+
+CMB: [[ 1d20 + ?{Type
+|Grapple, 10[Grapple]
+|Trip, 13[Trip]
+|Disarm, 10[Disarm]
+|Sunder,10[Disarm]
+|Bull Rush,10[Bull Rush]
+|Overrun,10[Overrun]
+|Dirty Trick,10[Dirty Trick]
+|Drag,10[Drag]
+|Reposition,10[Reposition]
+|Steal,10[Steal]} + ?{Misc Bonus/Penalty?|0}[Misc. Bonus] ]] vs CMD
+
+CMB: [[ 1d20 + ?{Type
+|Grapple,5[Grapple]
+|Trip,8[Trip]
+|Disarm,5[Disarm]
+|Sunder,5[Sunder]} + ?{Misc Bonus/Penalty?|0}[Misc. Bonus] ]] vs CMD
+
+&{template:default}
+{{name=Combat Maneuver}}
+{{Bonus/Penalty:=[[?{Misc Bonus/Penalty?|0}[Misc]]]}}
+{{?{Type
+|Grapple, Grapple:=[[1d20 + 10[Grapple] + ?{Misc Bonus/Penalty?&#125;]] vs CMD
+|Trip,Trip:=[[1d20 + 13(Trip) + ?{Misc Bonus/Penalty?&#125;]] vs CMD}
+}}
+
+
+
+
+&{template:default}
+{{name=Bomb Attack}}
+{{Attack:=[[ 1d20 + ?{Range
+	|20ft (+10),10[1st Step]
+	|30ft (+8),8[2nd Steps]
+	|40ft (+8),8[3rd Steps]
+	|60ft (+6),6[4th Steps]
+	|80ft (+4),4[5th Steps]}[Range] + ?{Misc Bonus/Penalty?|0}[Misc. Bonus] ]] vs Touch for [[ 5d6 + 5[Int] ]] dmg}}
+{{Add:=[[4d6]] fire dmg}}
+{{Splash:=Adjacent enemies take [[ floor((5 + 5[Int])/2) ]] dmg on a Reflex [[ 10 + 5[1/2 Level] + 5[Int] ]] save, otherwise they take [[ 5 + 5[Int] ]] dmg}}
+{{?{Bomb Type
+|Fire Bomb, Fire:=Fire damage
+|Tanglefoot Bomb, Tangle foot:=On hit target is glued to the spot and failed Reflex save are Entangled for [[2d4]] rounds}}}
